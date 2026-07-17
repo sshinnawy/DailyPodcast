@@ -16,6 +16,17 @@
     <!-- ITEMS -->
   <item>
     <title>Morning Brief · 2026-07-17</title>
+    <pubDate>Fri, 17 Jul 2026 10:42:18 +0000</pubDate>
+    <guid isPermaLink="false">brief-2026-07-17</guid>
+    <description><![CDATA[Morning Brief · Friday, July 17]]></description>
+    <enclosure url="https://github.com/sshinnawy/DailyPodcast/releases/download/brief-2026-07-17/morning-brief-2026-07-17.mp3" length="1490349" type="audio/mpeg"/>
+    <itunes:duration>1:33</itunes:duration>
+    <itunes:image href="https://sshinnawy.github.io/DailyPodcast/cover.png"/>
+    <podcast:chapters url="https://sshinnawy.github.io/DailyPodcast/episodes/2026-07-17/chapters.json" type="application/json+chapters"/>
+    <podcast:transcript url="https://sshinnawy.github.io/DailyPodcast/episodes/2026-07-17/transcript.txt" type="text/plain"/>
+  </item>
+  <item>
+    <title>Morning Brief · 2026-07-17</title>
     <pubDate>Fri, 17 Jul 2026 10:12:15 +0000</pubDate>
     <guid isPermaLink="false">brief-2026-07-17</guid>
     <description><![CDATA[Morning Brief · Friday, July 17]]></description>
