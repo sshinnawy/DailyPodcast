@@ -1,52 +1,41 @@
-	# .github/workflows/morning_brief.yml
-#
-# Triggered when the Cowork task pushes podcast_script.txt to the repo.
-# This job ONLY does: TTS → MP3 → GitHub Release → RSS update.
-# No external API keys required — uses only the built-in GITHUB_TOKEN.
-#
-# One-time repo setup:
-#   1. Create a gh-pages branch (empty is fine — will be populated on first run)
-#   2. Enable GitHub Pages on that branch in repo Settings → Pages
-
-name: Morning Brief — TTS & Publish
+name: Morning Brief - TTS & Publish
 
 on:
   push:
     branches: [main]
     paths:
-      - 'podcast_script.txt'   # only trigger when Cowork pushes the script
-  workflow_dispatch:            # manual trigger for testing
+      - podcast_script.txt
+  workflow_dispatch: {}
 
 jobs:
   tts_and_publish:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
     permissions:
-      contents: write    # needed to create releases and push to gh-pages
+      contents: write
 
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install system deps
+      - name: Install ffmpeg
         run: sudo apt-get install -y ffmpeg
 
       - name: Install Python deps
         run: pip install edge-tts pydub httpx
 
-      - name: Generate audio & publish
+      - name: Generate audio and publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPO:  ${{ github.repository }}
+          GITHUB_REPO: ${{ github.repository }}
         run: python tts_and_publish.py
 
-      - name: Save script as run artifact
+      - name: Save script artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
