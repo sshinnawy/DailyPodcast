@@ -1,0 +1,19 @@
+{
+  "version": "1.2.0",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro |",
+      "endTime": 14.43
+    },
+    {
+      "startTime": 14.43,
+      "title": "Tasks |",
+      "endTime": 52.05
+    },
+    {
+      "startTime": 52.05,
+      "title": "Sign-off |"
+    }
+  ]
+}
