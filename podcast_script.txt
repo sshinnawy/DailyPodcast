@@ -1,11 +1,15 @@
 [SECTION: Intro | ]
-ALEX: Good morning. Here's a thought to carry through the day — the secret of getting ahead is getting started. That's Mark Twain, as relevant now as ever.
-SAM: Short, sharp, true. Alright, let's run through what's on the plate.
+ALEX: Good afternoon, Seif. Quick Friday run-through — tasks and inbox, nothing else today.
+SAM: Let's keep it tight. What's on the list?
 [SECTION: Tasks | ]
-ALEX: A few things need your attention today. Bookings to FHR is due today — that's the one to move on first. Di Marsha Command, Farida First Class, and the hose fixture in the garden are all carrying over from earlier this week.
-SAM: The overdue pile is creeping up. Is any of that blockers on other people?
-ALEX: Possibly the bookings one. Also worth noting — Hanaa's medication reminder is flagged high priority, due August ninth. Plenty of lead time, but don't let it drift.
-SAM: And Nora Hamdy's birthday was yesterday — if you haven't reached out, today's the window.
+ALEX: Right. Starting with the high-priority items — Hanaa Dawa is flagged urgent, due August ninth. That's medication, so it needs to stay on your radar even though it's a few weeks out.
+SAM: And Hanaa's MS Clinic annual visit? That one's showing April twenty-seventh — that's months overdue. That needs a call to reschedule if it hasn't happened.
+ALEX: Good catch. Moving to the overdue pile — Bookings to FHR was due yesterday, Di Marsha Command, Farida First Class, and the garden hose attachment have all been sitting since Tuesday.
+SAM: That's four things carrying over. Which one actually has a hard dependency on someone else?
+ALEX: Likely the FHR bookings. The rest are personal action items. Also — Omar Hosny's birthday is marked in your My Day list.
+SAM: That one's from June. Might be worth a belated message if you haven't sent one.
+[SECTION: Emails | ]
+ALEX: Inbox is quiet on anything urgent. GitHub sent a workflow notification — that's been resolved. Azure welcome email from your developer setup, a couple of Talabat receipts, and an Anthropic billing confirmation. Nothing needs your attention.
 [SECTION: Sign-off | ]
-ALEX: That's the Friday brief. Have a strong finish to the week.
-SAM: Back Monday. Clear skies, Cairo.
+SAM: That's the Friday wrap. Clear skies, short list — have a good weekend.
+ALEX: Back Sunday. Take care.
