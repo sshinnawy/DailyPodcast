@@ -4,15 +4,20 @@
     {
       "startTime": 0.0,
       "title": "Intro |",
-      "endTime": 14.43
+      "endTime": 10.78
     },
     {
-      "startTime": 14.43,
+      "startTime": 10.78,
       "title": "Tasks |",
-      "endTime": 52.05
+      "endTime": 67.81
     },
     {
-      "startTime": 52.05,
+      "startTime": 67.81,
+      "title": "Emails |",
+      "endTime": 84.66
+    },
+    {
+      "startTime": 84.66,
       "title": "Sign-off |"
     }
   ]
