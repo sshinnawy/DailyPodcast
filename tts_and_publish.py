@@ -198,6 +198,23 @@ def upload_release(mp3_path: str, date_str: str):
     tag  = f"brief-{date_str}"
     name = f"Morning Brief · {date_str}"
 
+    # Delete existing release + tag if present (e.g. from a placeholder run)
+    chk = httpx.get(
+        f"https://api.github.com/repos/{GITHUB_REPO}/releases/tags/{tag}",
+        headers=github_headers(), timeout=15,
+    )
+    if chk.status_code == 200:
+        rid = chk.json()["id"]
+        print(f"  Deleting existing release {tag} (id {rid})...")
+        httpx.delete(
+            f"https://api.github.com/repos/{GITHUB_REPO}/releases/{rid}",
+            headers=github_headers(), timeout=15,
+        )
+        httpx.delete(
+            f"https://api.github.com/repos/{GITHUB_REPO}/git/refs/tags/{tag}",
+            headers=github_headers(), timeout=15,
+        )
+
     r = httpx.post(
         f"https://api.github.com/repos/{GITHUB_REPO}/releases",
         headers=github_headers(),
